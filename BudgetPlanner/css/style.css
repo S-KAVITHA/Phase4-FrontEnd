@@ -61,19 +61,13 @@ body {
   border: 2px solid green;
   }
 
-.bg-two {
-  background-color: rgb(37, 24, 6);
-  border: 2px solid brown;
+  table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 4px;
 }
 
-.bg-three {
-  background-color: rgb(73, 70, 24);
-  border: 2px solid green;
-}
 
-.bg-dark {
-  background-color: #043464!important;
-}
 .alert {
   margin-bottom: 0rem !important;
 }
