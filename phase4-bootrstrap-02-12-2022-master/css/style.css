@@ -1,0 +1,26 @@
+.bg-one {
+    background-color: aqua;
+    border: 2px solid green;
+}
+
+.bg-two {
+    background-color: bisque;
+    border: 2px solid brown;
+}
+
+.bg-three {
+    background-color: rgb(73, 70, 24);
+    border: 2px solid green;
+}
+
+.bg-dark {
+    background-color: #043464!important;
+}
+.alert {
+    margin-bottom: 0rem !important;
+}
+
+.form-container{
+    border: 2px solid green;
+    padding: 40px;
+}

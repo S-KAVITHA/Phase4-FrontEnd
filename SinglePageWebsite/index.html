@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Single Page Website</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            font-family: 'Franklin Gothic Medium';
+        }
+        #mast{
+            width: 100%;
+            background-color: #ddd;
+            height: 50px;
+            margin-top: 20px;
+            position: fixed;
+        }
+        .container{
+            max-width: 2040px;
+            border: 1px solid black;
+            margin: () auto;
+        }
+        .section{
+            border: 1px solid #ddd;
+            min-height: 500px;
+        }
+     
+        #nav ul{ 
+            list-style: none;
+            margin:() auto;
+            display: block;
+        }
+        #nav li{
+            float: left;
+            padding:0 10px;
+            margin: .5px;
+            background-color: black;
+        }
+        #nav li a{
+            text-decoration: none;
+            font-size: 2em;
+            color:white;
+        }
+        #nav li a.active{
+           border-bottom: 3px solid yellow;
+           color: yellow;
+        }
+
+        #nav li a:hover{
+           color:red;
+        }
+        .clear{
+       clear: both; 
+    }
+    .wrap{
+        background-color: rgb(200,200,200);
+        background-color:rgba(200,200,200); ;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 40px auto;
+        width: 70%;
+    }
+    #section1 .wrap{
+        margin-top: 80px;
+    }
+    #section1{
+        background: url('https://placeimg.com/1000/800/tech');
+        background-size: cover;
+    }
+    #section2{
+        background: url('https://placeimg.com/1000/800/people');
+        background-color: rgb(71, 76, 76);
+    }
+    #section3{
+        background: url('https://placeimg.com/1000/800/tech');
+        background-color: rgb(71, 76, 76);
+    }
+    #section4{
+        background: url('https://placeimg.com/1000/800/tech');
+        background-color: rgb(71, 76, 76);
+    }
+    #section5{
+        background: url('https://placeimg.com/1000/800/tech');
+        background-color: rgb(71, 76, 76);
+    }
+    #section6{
+        background: url('https://placeimg.com/1000/800/people');
+        background-color: rgb(71, 76, 76);
+    }
+    #footer{
+        background-color: #333;
+        color:white;
+    }
+    .col-1{
+        width:66%;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    img{
+        float: left;
+        padding: 5px;
+        border: 4px solid white;
+        margin: 5px;
+
+    }
+    </style>
+</head>
+<body>
+
+<header id="mast">
+    <div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#section1" class="active">Section 1</a></li>
+                <li><a href="#section2" >Section 2</a></li>
+                <li><a href="#section3" >Section 3</a></li>
+                <li><a href="#section4" >Section 4</a></li>
+                <li><a href="#section5" >Section 5</a></li>
+                <li><a href="#section6" >Section 6</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="container">
+<section id="section1" class="section clear">
+    <div class="wrap"> <img src="https://via.placeholder.com/150"> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+        
+        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum</p></div>
+</section>
+
+<section id="section2" class="section">
+    <div class="wrap"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum</p> </div>
+</section>
+
+<section id="section3" class="section">
+    <div class="wrap"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+        <p>Aenean commodo ligula eget dolor. Aenean massa.</p>
+        
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        
+        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+        
+        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p> </div>
+</section>
+
+<section id="section4" class="section">
+    <div class="wrap"> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+
+        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,</p> </div>
+</section>
+
+<section id="section5" class="section">
+    <div class="wrap"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,</p> </div>
+</section>
+
+<section id="section6" class="section">
+    <div class="wrap"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer</p> </div>
+</section>
+
+<footer id="footer">
+    
+<center> <div class="col-l">(c)copyright my Website<p>Contact us for more information</p></div></center>
+    
+<center><div class="col-2"><ul><li> Network 1</li> <li> More links</li></ul></div></center>
+</footer>
+<script>
+var section = document.querySelectorAll('.section');
+var sections = {};
+section.forEach(function(e){
+    console.log(e.id,e.offsetTop)
+    sections[e.id]=e.offsetTop;
+})
+windows.onscroll = function(){
+    var scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+    console.log(scrollPos);
+    for (var x in sections){
+        document.querySelector('.active').setAttribute('class','');
+        document.querySelector('a[href*='+x+']').setAttribute('class','active')
+    }
+
+}
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about Circus</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+    <!-- Header  -->
+    <header>
+      <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <strong> Welcome to Circus !</strong> You should check  out  some our new shows here.
+        <a href="#" class="badge badge-success">Daily shows</a>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">RigMaster Circus</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Clowns</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Musicians</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Acrobats</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              Events
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Acrobats Show</a>
+              <a class="dropdown-item" href="#">Ringmaster Show</a>
+              <a class="dropdown-item" href="#">Musicians show</a>
+            </div>
+          </li>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search for events" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Registration Form  -->
+    <div class="container form-container mt-5">
+        <h1>Registration Form</h1>
+        <form action="/registration" method="post" class="form-validate" novalidate>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" class="form-control" required minlength="3" maxlength="6"> 
+                    <small class="valid-feedback">First Name Look good!</small>
+                    <small class="invalid-feedback">Please enter a valid first name.</small>
+                </div>
+                <div class="col-md-6">
+                    <label for="lastName">Lat Name</label>
+                    <input type="text" id="lastName" name="lastName" class="form-control" required minlength="3" maxlength="6">
+                    <small class="valid-feedback">Last Name Look good!</small>
+                    <small class="invalid-feedback">Please enter a valid last name.</small>
+                </div>
+            </div>        
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                    <small class="valid-feedback">Email Address Look good!</small>
+                    <small class="invalid-feedback">Please enter a valid email address.</small>
+                </div>
+                <div class="col-md-6">
+                    <label for="password">Password </label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                    <small class="valid-feedback"> Password Look good!</small>
+                    <small class="invalid-feedback">Please enter a valid password.</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="state">Select State</label>
+                    <select name="state" id="state" class="custom-select" required>
+                        <option value="">...</option>
+                        <option value="NY">New York</option>
+                        <option value="TX">Texas</option>
+                        <option value="CL">California</option>
+                        <option value="HW">Hawai</option>
+                    </select>
+                    <small class="valid-feedback"> State selection Look good!</small>
+                    <small class="invalid-feedback">Please select a valid state of you choice.</small>
+                </div>
+                <div class="col-md-6">
+                    <label for="state">Zip Code</label>
+                    <input type="number" id="zipcode" name="zipcode" class="form-control" required>
+                    <small class="valid-feedback"> Zipcode Look good!</small>
+                    <small class="invalid-feedback">Please enter a valid zipcode.</small>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input type="checkbox" name="agree" id="agree" class="form-check-input" required>
+                        <label for="state" class="form-check-label">Accept to terms and conditions.</label>
+                        <small class="invalid-feedback">Please Accept to terms and conditions.</small>
+                    </div>                   
+                </div>
+                <div class="col-md-6">
+                    <label for="state" class="form-check-label">Upload Profile Image</label>
+                    <input type="file" class="form-control-file" id="profile" name="profile" required>
+                    <small class="valid-feedback"> Profile Image Look good!</small>
+                    <small class="invalid-feedback">Please select a profile image.</small>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <button class="btn btn-success btn-block"> Submit </button>
+                </div>
+                <div class="col-md-3"></div>
+                
+            </div>
+        </form>
+    </div>
+
+    <script>
+        var form = document.querySelector(".form-validate");
+        form.addEventListener('submit', function(event) {
+            if(form.checkValidity()==false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add("was-validated");
+        });
+    </script>
+
+    <script src="js/jquery.slim.min.js" ></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

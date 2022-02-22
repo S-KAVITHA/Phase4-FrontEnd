@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrap Theme</title>
+    <style>
+
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#main-nav" id="home">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
+        <div class="container">
+            <a href="" class="navbar-brand">
+                <h1>My Budget Planning App</h1>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+
+    <header id="home-section">
+        <div class="dark-overlay">
+            <div class="home-inner container">
+                <strong> <h3> Welcome to Budget Planning App !!!. Maintain your expenses here !!!</h3> </strong>
+
+    </header>
+
+    <section id="explore-head-section">
+        <br/>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card bg-primary text-center card-form">
+                        <div class="container form-container">
+
+                            <form name="form1">
+                                <div class="row">
+                                    <div class="col-md-16">
+                                        <label for="firstName">Enter Your Budget</label>
+                                        <input type="text" id="budget" name="budget" class="form-control" required
+                                            minlength="3" maxlength="10"> <br />
+                                        <input class="btn btn-success btn-block" id="Submit" value="Submit" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-7">
+                    <!-- app info -->
+                    <div class="row my-3">
+                        <div class="col-4 text-center mb-2">
+                            <h6 class="text-uppercase info-title">budget</h6>
+                            <span class="budget-icon"><i class="fas fa-money-bill-alt"></i></span>
+                            <h4 class="text-uppercase mt-2 budget" id="budget"><span>$ </span><span
+                                    id="budget-amount">0</span></h4>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h6 class="text-uppercase info-title">expenses</h6>
+                            <span class="expense-icon"><i class="far fa-credit-card"></i></span>
+                            <h4 class="text-uppercase mt-2 expense" id="expense"><span>$ </span><span
+                                    id="expense-amount">0</span></h4>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h6 class="text-uppercase info-title">balance</h6>
+                            <span class="balance-icon"><i class="fas fa-dollar-sign"></i></span>
+                            <h4 class="text-uppercase mt-2 balance" id="balance"> <span>$ </span><span
+                                    id="balance-amount">0</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card bg-primary text-center card-form">
+                        <div class="container form-container">
+
+                            <form name="form2">
+                                <div class="row">
+                                    <div class="col-md-16">
+                                        <label for="firstName">Enter Your Expense</label>
+                                        <input type="text" id="expenseName" name="expenseName" class="form-control"
+                                            required minlength="3" maxlength="10"> <br />
+                                        <label for="firstName">Enter Your Expense Amount</label>
+                                        <input type="text" id="expenseAmt" name="expenseAmt" class="form-control"
+                                            required minlength="3" maxlength="10"> <br />
+                                        <input class="btn btn-success btn-block" id="ExpSubmit" value="Submit" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <table class="table table-bordered">
+                        <thead class="alert-info">
+                            <tr>
+                                <th>expense</th>
+                                <th>expenseamt</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="result"></tbody>
+                    </table>
+                </div>
+
+                <div class="col-md-7">
+                    <!-- app info -->
+                    <div class="row my-3">
+                        <div class="col-4 text-center mb-2">
+                            <h6 class="text-uppercase info-title">Expense Name</h6>
+                            <span class="budget-icon"><i class="fas fa-money-bill-alt"></i></span>
+                            <h4 class="text-uppercase mt-2 budget" id="budget"><span>$ </span><span
+                                    id="exp-Name">0</span></h4>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h6 class="text-uppercase info-title">Expense Amount</h6>
+                            <span class="expense-icon"><i class="far fa-credit-card"></i></span>
+                            <h4 class="text-uppercase mt-2 expense" id="expense"><span>$ </span><span
+                                    id="exp-Amount">0</span></h4>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h6 class="text-uppercase info-title">Del Amount</h6>
+                            <span class="expense-icon"><i class="far fa-credit-card"></i></span>
+                            <a href="#" class="delete-icon" data-id="${expense.id}">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        </div>
+        </div>
+
+
+    </section>
+
+
+
+
+        <!-- FOOTER -->
+        <footer id="main-footer" class="bisque">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center py-4">
+                        <h3>Budget Planning App</h3>
+                        <p>Copyright &copy;
+                            <span id="year"></span>
+                        </p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact
+                            Us</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- CONTACT MODAL -->
+        <div class="modal fade text-dark" id="contactModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contact Us</h5>
+                        <button class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <input class="btn btn-success btn-block" id="SubmitDetails" value="Submit" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="js/budget.js"></script>
+        <script>
+
+
+
+        </script>
+
+
+        <script>
+            // Get the current year for the copyright
+            $('#year').text(new Date().getFullYear());
+
+            // Init Scrollspy
+            $('body').scrollspy({ target: '#main-nav' });
+
+            // Smooth Scrolling
+            $("#main-nav a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+
+                    const hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        window.location.hash = hash;
+                    });
+                }
+            });
+
+
+            var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+            var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+                return new bootstrap.Dropdown(dropdownToggleEl)
+            })
+        </script>
+</body>
+
+</html>
