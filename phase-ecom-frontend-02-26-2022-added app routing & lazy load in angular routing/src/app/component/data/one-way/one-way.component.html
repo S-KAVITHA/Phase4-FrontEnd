@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="alert alert-primary" role="alert">Interpolation syntax</div>
+  <div class="alert alert-secondary" role="alert">
+    Product Title : {{ title }}
+  </div>
+  <div class="alert alert-success" role="alert">
+    Product description : {{ desc }}
+  </div>
+  <div class="alert alert-danger" role="alert">
+    Product price : {{ price }}
+  </div>
+  <div class="alert alert-warning" role="alert">
+    Product status : {{ isActive }}
+  </div>
+  <div class="alert alert-info" role="alert">
+    Customer : id : {{ customer.id }}  -  name : {{ customer.name }}  -  age : {{ customer.age }}
+  </div>
+</div>
+
+<div class="container">
+  <div class="alert alert-primary" role="alert">Property syntax</div>
+  <div class="alert alert-secondary" role="alert">
+    Product Title : <span [innerText]="title"></span>
+  </div>
+  <div class="alert alert-success" role="alert">
+    product description : <span [innerText]="desc"></span>
+  </div>
+  <div class="alert alert-danger" role="alert">
+    product description : <span [innerText]="price"></span>
+  </div>
+  <div class="alert alert-warning" role="alert">
+    Product status :  <span [innerText]="isActive"></span>
+  </div>
+  <div class="alert alert-info" role="alert">
+    Customer : 
+      -   id : <span [innerText]="customer.id"></span>
+      -  name : <span [innerText]="customer.name"></span>  
+      -  age : <span [innerText]="customer.age"></span> 
+  </div>
+</div>

@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+.alert{
+    margin-bottom: 0rem !important;
+}
+.bg-dark {
+    background-color: #17436f!important;
+}

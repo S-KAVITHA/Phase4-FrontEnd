@@ -1,0 +1,11 @@
+.form-container{
+    border: 2px solid green;
+    margin-top: 5%;
+    padding: 3%;
+}
+
+.has-error{
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}

@@ -1,3 +1,5 @@
+
+CSSMediaRule
 // JavaScript class : It is added from es6 , as a new syntax to declare OOP
 // class expression syntax
 let PersonOpr = class {

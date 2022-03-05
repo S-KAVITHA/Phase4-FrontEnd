@@ -1,0 +1,13 @@
+<div class="container">
+
+    <input type="text" class="form-control" name="username" (input)="onInput($event)">
+
+    <br>
+    <button class="btn btn-primary" (click)="onClick()">Submit</button>
+</div>
+
+<div class="container">
+    <div class="alert alert-primary" > {{message}}</div>
+    <input type="text" id="message" class="form-control" name="tmpMessage" #tmpMessage>
+    <button class="btn btn-primary" (click)="onSubmit(tmpMessage)">Submit Message</button>
+</div>

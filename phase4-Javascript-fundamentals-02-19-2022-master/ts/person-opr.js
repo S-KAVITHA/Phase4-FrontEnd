@@ -15,7 +15,7 @@ var PersonOpr = /** @class */ (function () {
     };
     return class_1;
 }());
-var personObj = new PersonOpr(1000011, 'John smith', 'john.smith@gmail.com', 'John Street ABC');
+var personObj = new PersonOpr(3903483945, 'John smith', 'john.smith@gmail.com', 'John Street ABC');
 console.log(personObj);
 console.log(personObj.id);
 console.log(personObj.name);

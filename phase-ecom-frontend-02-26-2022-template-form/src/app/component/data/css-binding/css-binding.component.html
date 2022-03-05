@@ -1,0 +1,25 @@
+<div class="container">
+    <h3 [style.color]="'brown'">Style Binding</h3>
+    <div class="alert alert-primary" role="alert">
+        Username : {{username}}
+    </div>
+    <div [style.color]="colors.RED" [style.font-size.px]="age" class="alert alert-success" role="alert">
+        Age : {{age}}
+    </div>
+    <div [style.color]="colors.GREEN" [style.font-size.px]="age" class="alert alert-info" role="alert">
+        Message : {{message}}
+    </div>
+</div>
+
+<div class="container">
+    <h3 [className]="'bg-two'">Class Binding</h3>
+    <div [className]="'alert alert-primary'" role="alert">
+        Username : {{username}}
+    </div>
+    <div [class]="age>30 ? 'alert alert-success' : 'alert alert-danger'" role="alert">
+        Age : {{age}}
+    </div>
+    <div [class]="product.status ? 'bg-three' : 'bg-one'" role="alert">
+        Message : {{product.name}}  -- {{product.id}}  -- {{product.status}}
+    </div>
+</div>
